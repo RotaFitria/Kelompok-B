@@ -12,7 +12,7 @@ OpenCVFrameGrabber frameGrabber = new OpenCVFrameGrabber("rtsp://admin:fandi123@
             opencv_core.IplImage img=frameGrabber.grab();
             if(img!=null)
             {
-                cvSaveImage("Gambar.png", img);
+                cvSaveImage("Snapshot.png", img);
             }
         } catch (Exception e){
             e.printStackTrace();
