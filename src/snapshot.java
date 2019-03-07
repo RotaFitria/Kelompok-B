@@ -6,7 +6,7 @@ public class snapshot{
 
 public static void main(String[] args) throws Exception {
 
-OpenCVFrameGrabber frameGrabber = new OpenCVFrameGrabber("rtsp://admin:fandi123@192.168.1.64/Stream/Channels/101/?dummy=param.mjpg"); 
+OpenCVFrameGrabber frameGrabber = new OpenCVFrameGrabber("rtsp://admin:fandi123@192.168.1.64/Stream/Channels/101"); 
         try {
             frameGrabber.start();
             opencv_core.IplImage img=frameGrabber.grab();
